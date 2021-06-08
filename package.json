@@ -1,0 +1,13 @@
+{
+  "name": "reflect-metadata-ng ",
+  "version": "0.1.0",
+  "main": "Reflect.ts",
+  "author": "Phoenix The Fallen <thephoenixofthevoid@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.3",
+    "ts-jest": "^27.0.2"
+  }
+}
