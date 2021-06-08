@@ -6,8 +6,7 @@ Full-featured "reflect-metadata" remastered for modern environments.
 - No test broke on modern envirimnent after remastering.
 - Similar to https://github.com/abraham/reflection but implements FULL API
 
-|        \ package      |               |   reflect-  |  reflect-   |
-|    API \              |  reflection   |  -metadata  |-metadata-ng |
+|    API \ package      |  reflection   | RM          | RM-NG       |
 |-----------------------|-------------- |-------------|-------------|
 |    decorate           |  IMPLEMENTED  | IMPLEMENTED | IMPLEMENTED |
 |    defineMetadata     |  IMPLEMENTED  | IMPLEMENTED | IMPLEMENTED |
@@ -19,7 +18,7 @@ Full-featured "reflect-metadata" remastered for modern environments.
 |    deleteMetadata     |    MISSING    | IMPLEMENTED | IMPLEMENTED |
 |    getMetadataKeys    |    MISSING    | IMPLEMENTED | IMPLEMENTED |
 |    getOwnMetadataKeys |    MISSING    | IMPLEMENTED | IMPLEMENTED |
-|-----------------------|---------------|-------------|-------------|
+|                       |               |             |             
 |    js filesize, KB    |   3K          | 50K         | 11K         |
 
 ## Usage
