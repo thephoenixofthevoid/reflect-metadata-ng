@@ -1,98 +1,98 @@
-[2K[1G[33mwarning[39m ../../package.json: No license field
-[0m[7m[1m[32m PASS [39m[22m[27m[0m ]8;;file:///home/feanor/Documents/reflect-metadata-ng/Reflect.spec.ts[2m./[22m[1mReflect.spec.ts[22m]8;;
+warning ../../package.json: No license field
+PASS ./Reflect.spec.ts
   Reflect.decorate
-    [32m✓[39m [2mThrowsIfDecoratorsArgumentNotArrayForFunctionOverload (43 ms)[22m
-    [32m✓[39m [2mThrowsIfTargetArgumentNotFunctionForFunctionOverload (1 ms)[22m
-    [32m✓[39m [2mThrowsIfDecoratorsArgumentNotArrayForPropertyOverload (1 ms)[22m
-    [32m✓[39m [2mThrowsIfTargetArgumentNotObjectForPropertyOverload (1 ms)[22m
-    [32m✓[39m [2mThrowsIfDecoratorsArgumentNotArrayForPropertyDescriptorOverload (1 ms)[22m
-    [32m✓[39m [2mThrowsIfTargetArgumentNotObjectForPropertyDescriptorOverload (1 ms)[22m
-    [32m✓[39m [2mExecutesDecoratorsInReverseOrderForFunctionOverload (1 ms)[22m
-    [32m✓[39m [2mExecutesDecoratorsInReverseOrderForPropertyOverload (1 ms)[22m
-    [32m✓[39m [2mExecutesDecoratorsInReverseOrderForPropertyDescriptorOverload[22m
-    [32m✓[39m [2mDecoratorPipelineForFunctionOverload (1 ms)[22m
-    [32m✓[39m [2mDecoratorPipelineForPropertyOverload[22m
-    [32m✓[39m [2mDecoratorPipelineForPropertyDescriptorOverload[22m
-    [32m✓[39m [2mDecoratorCorrectTargetInPipelineForFunctionOverload (1 ms)[22m
-    [32m✓[39m [2mDecoratorCorrectTargetInPipelineForPropertyOverload[22m
-    [32m✓[39m [2mDecoratorCorrectNameInPipelineForPropertyOverload[22m
-    [32m✓[39m [2mDecoratorCorrectTargetInPipelineForPropertyDescriptorOverload[22m
-    [32m✓[39m [2mDecoratorCorrectNameInPipelineForPropertyDescriptorOverload (1 ms)[22m
-    [32m✓[39m [2mDecoratorCorrectDescriptorInPipelineForPropertyDescriptorOverload[22m
+    ✓ ThrowsIfDecoratorsArgumentNotArrayForFunctionOverload (61 ms)
+    ✓ ThrowsIfTargetArgumentNotFunctionForFunctionOverload (1 ms)
+    ✓ ThrowsIfDecoratorsArgumentNotArrayForPropertyOverload (1 ms)
+    ✓ ThrowsIfTargetArgumentNotObjectForPropertyOverload (1 ms)
+    ✓ ThrowsIfDecoratorsArgumentNotArrayForPropertyDescriptorOverload (1 ms)
+    ✓ ThrowsIfTargetArgumentNotObjectForPropertyDescriptorOverload (1 ms)
+    ✓ ExecutesDecoratorsInReverseOrderForFunctionOverload (2 ms)
+    ✓ ExecutesDecoratorsInReverseOrderForPropertyOverload (1 ms)
+    ✓ ExecutesDecoratorsInReverseOrderForPropertyDescriptorOverload
+    ✓ DecoratorPipelineForFunctionOverload
+    ✓ DecoratorPipelineForPropertyOverload (1 ms)
+    ✓ DecoratorPipelineForPropertyDescriptorOverload (1 ms)
+    ✓ DecoratorCorrectTargetInPipelineForFunctionOverload
+    ✓ DecoratorCorrectTargetInPipelineForPropertyOverload
+    ✓ DecoratorCorrectNameInPipelineForPropertyOverload (1 ms)
+    ✓ DecoratorCorrectTargetInPipelineForPropertyDescriptorOverload (1 ms)
+    ✓ DecoratorCorrectNameInPipelineForPropertyDescriptorOverload (1 ms)
+    ✓ DecoratorCorrectDescriptorInPipelineForPropertyDescriptorOverload
   Reflect.defineMetadata
-    [32m✓[39m [2mInvalidTarget (1 ms)[22m
-    [32m✓[39m [2mValidTargetWithoutTargetKey[22m
-    [32m✓[39m [2mValidTargetWithTargetKey[22m
+    ✓ InvalidTarget (1 ms)
+    ✓ ValidTargetWithoutTargetKey (1 ms)
+    ✓ ValidTargetWithTargetKey
   Reflect.deleteMetadata
-    [33m○[39m [2mskipped InvalidTarget[22m
-    [33m○[39m [2mskipped WhenNotDefinedWithoutTargetKey[22m
-    [33m○[39m [2mskipped WhenDefinedWithoutTargetKey[22m
-    [33m○[39m [2mskipped WhenDefinedOnPrototypeWithoutTargetKey[22m
-    [33m○[39m [2mskipped AfterDeleteMetadata[22m
-    [33m○[39m [2mskipped KeysKeysInvalidTarget[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenNotDefined[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenDefined[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenDefinedOnPrototype[22m
-    [33m○[39m [2mskipped KeysOrderWithoutTargetKey[22m
-    [33m○[39m [2mskipped KeysOrderAfterRedefineWithoutTargetKey[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenNotDefined[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenDefined[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenDefinedOnPrototype[22m
-    [33m○[39m [2mskipped KeysOrderAfterRedefineWithTargetKey[22m
+    ○ skipped InvalidTarget
+    ○ skipped WhenNotDefinedWithoutTargetKey
+    ○ skipped WhenDefinedWithoutTargetKey
+    ○ skipped WhenDefinedOnPrototypeWithoutTargetKey
+    ○ skipped AfterDeleteMetadata
+    ○ skipped KeysKeysInvalidTarget
+    ○ skipped KeysWithoutTargetKeyWhenNotDefined
+    ○ skipped KeysWithoutTargetKeyWhenDefined
+    ○ skipped KeysWithoutTargetKeyWhenDefinedOnPrototype
+    ○ skipped KeysOrderWithoutTargetKey
+    ○ skipped KeysOrderAfterRedefineWithoutTargetKey
+    ○ skipped KeysWithTargetKeyWhenNotDefined
+    ○ skipped KeysWithTargetKeyWhenDefined
+    ○ skipped KeysWithTargetKeyWhenDefinedOnPrototype
+    ○ skipped KeysOrderAfterRedefineWithTargetKey
   Reflect.getMetadataKeys
-    [33m○[39m [2mskipped KeysInvalidTarget[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenNotDefined[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenDefined[22m
-    [33m○[39m [2mskipped KeysWithoutTargetKeyWhenDefinedOnPrototype[22m
-    [33m○[39m [2mskipped KeysOrderWithoutTargetKey[22m
-    [33m○[39m [2mskipped KeysOrderAfterRedefineWithoutTargetKey[22m
-    [33m○[39m [2mskipped KeysOrderWithoutTargetKeyWhenDefinedOnPrototype[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenNotDefined[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenDefined[22m
-    [33m○[39m [2mskipped KeysWithTargetKeyWhenDefinedOnPrototype[22m
-    [33m○[39m [2mskipped KeysOrderAfterRedefineWithTargetKey[22m
-    [33m○[39m [2mskipped KeysOrderWithTargetKeyWhenDefinedOnPrototype[22m
+    ○ skipped KeysInvalidTarget
+    ○ skipped KeysWithoutTargetKeyWhenNotDefined
+    ○ skipped KeysWithoutTargetKeyWhenDefined
+    ○ skipped KeysWithoutTargetKeyWhenDefinedOnPrototype
+    ○ skipped KeysOrderWithoutTargetKey
+    ○ skipped KeysOrderAfterRedefineWithoutTargetKey
+    ○ skipped KeysOrderWithoutTargetKeyWhenDefinedOnPrototype
+    ○ skipped KeysWithTargetKeyWhenNotDefined
+    ○ skipped KeysWithTargetKeyWhenDefined
+    ○ skipped KeysWithTargetKeyWhenDefinedOnPrototype
+    ○ skipped KeysOrderAfterRedefineWithTargetKey
+    ○ skipped KeysOrderWithTargetKeyWhenDefinedOnPrototype
   Reflect.getMetadata
-    [32m✓[39m [2mInvalidTarget (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenNotDefined (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefined[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefinedOnPrototype (1 ms)[22m
-    [32m✓[39m [2mWithTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefined (1 ms)[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefinedOnPrototype (1 ms)[22m
+    ✓ InvalidTarget (1 ms)
+    ✓ WithoutTargetKeyWhenNotDefined
+    ✓ WithoutTargetKeyWhenDefined (1 ms)
+    ✓ WithoutTargetKeyWhenDefinedOnPrototype
+    ✓ WithTargetKeyWhenNotDefined (1 ms)
+    ✓ WithTargetKeyWhenDefined
+    ✓ WithTargetKeyWhenDefinedOnPrototype (1 ms)
   Reflect.getOwnMetadata
-    [32m✓[39m [2mInvalidTarget (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefined (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefinedOnPrototype[22m
-    [32m✓[39m [2mWithTargetKeyWhenNotDefined (1 ms)[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefinedOnPrototype[22m
+    ✓ InvalidTarget (1 ms)
+    ✓ WithoutTargetKeyWhenNotDefined
+    ✓ WithoutTargetKeyWhenDefined (1 ms)
+    ✓ WithoutTargetKeyWhenDefinedOnPrototype
+    ✓ WithTargetKeyWhenNotDefined (1 ms)
+    ✓ WithTargetKeyWhenDefined
+    ✓ WithTargetKeyWhenDefinedOnPrototype
   Reflect.hasMetadata
-    [32m✓[39m [2mInvalidTarget[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefined (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefinedOnPrototype (1 ms)[22m
-    [32m✓[39m [2mWithTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefinedOnPrototype[22m
+    ✓ InvalidTarget (1 ms)
+    ✓ WithoutTargetKeyWhenNotDefined
+    ✓ WithoutTargetKeyWhenDefined (1 ms)
+    ✓ WithoutTargetKeyWhenDefinedOnPrototype
+    ✓ WithTargetKeyWhenNotDefined
+    ✓ WithTargetKeyWhenDefined
+    ✓ WithTargetKeyWhenDefinedOnPrototype
   Reflect.hasOwnMetadata
-    [32m✓[39m [2mInvalidTarget (1 ms)[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefined[22m
-    [32m✓[39m [2mWithoutTargetKeyWhenDefinedOnPrototype[22m
-    [32m✓[39m [2mWithTargetKeyWhenNotDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefined[22m
-    [32m✓[39m [2mWithTargetKeyWhenDefinedOnPrototype[22m
+    ✓ InvalidTarget (1 ms)
+    ✓ WithoutTargetKeyWhenNotDefined
+    ✓ WithoutTargetKeyWhenDefined (1 ms)
+    ✓ WithoutTargetKeyWhenDefinedOnPrototype
+    ✓ WithTargetKeyWhenNotDefined
+    ✓ WithTargetKeyWhenDefined (1 ms)
+    ✓ WithTargetKeyWhenDefinedOnPrototype
   Reflect.metadata
-    [32m✓[39m [2mReturnsDecoratorFunction[22m
-    [32m✓[39m [2mDecoratorThrowsWithInvalidTargetWithTargetKey (6 ms)[22m
-    [32m✓[39m [2mDecoratorThrowsWithInvalidTargetKey (1 ms)[22m
-    [32m✓[39m [2mOnTargetWithoutTargetKey (1 ms)[22m
-    [32m✓[39m [2mOnTargetWithTargetKey[22m
+    ✓ ReturnsDecoratorFunction
+    ✓ DecoratorThrowsWithInvalidTargetWithTargetKey
+    ✓ DecoratorThrowsWithInvalidTargetKey (1 ms)
+    ✓ OnTargetWithoutTargetKey (1 ms)
+    ✓ OnTargetWithTargetKey
 
-[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
-[1mTests:       [22m[1m[33m27 skipped[39m[22m, [1m[32m54 passed[39m[22m, 81 total
-[1mSnapshots:   [22m0 total
-[1mTime:[22m        1.602 s, estimated 2 s
-[2mRan all test suites[22m[2m.[22m
+Test Suites: 1 passed, 1 total
+Tests:       27 skipped, 54 passed, 81 total
+Snapshots:   0 total
+Time:        1.745 s, estimated 2 s
+Ran all test suites.
