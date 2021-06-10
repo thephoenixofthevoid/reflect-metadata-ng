@@ -14,5 +14,8 @@
     "noImplicitThis": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "files": [
+  	"Reflect.MIT.ts"
+  ]
 }
