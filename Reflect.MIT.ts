@@ -212,9 +212,15 @@ export function getMetadataKeys(
   target: Target,
   propertyKey?: PropertyKey,
 ): any[] {
-	target
-	propertyKey
-	return []
+  if (target === undefined) {
+    throw new TypeError();
+  }
+  const result = new Set<any>();
+  while (target) {
+		for (const key of getOwnMetadataKeys(target, propertyKey)) result.add(key)
+		target = Object.getPrototypeOf(target)
+  }
+  return Array.from(result);
 }
 
 export function getOwnMetadataKeys(
@@ -238,7 +244,6 @@ export const Reflection = {
   hasMetadata,
   hasOwnMetadata,
   metadata,
-  
   deleteMetadata,
   getMetadataKeys,
   getOwnMetadataKeys
@@ -254,7 +259,6 @@ declare global {
     let hasOwnMetadata: typeof Reflection.hasOwnMetadata;
     let hasMetadata: typeof Reflection.hasMetadata;
     let metadata: typeof Reflection.metadata;
-        
     let deleteMetadata: typeof Reflection.deleteMetadata;
     let getMetadataKeys: typeof Reflection.getMetadataKeys;
     let getOwnMetadataKeys: typeof Reflection.getOwnMetadataKeys;

@@ -282,7 +282,7 @@ describe("Reflect.deleteMetadata", () => {
 
 // 4.1.8 Reflect.getMetadataKeys ( target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.getmetadatakeys
-describe.skip("Reflect.getMetadataKeys", () => {
+describe("Reflect.getMetadataKeys", () => {
     it("KeysInvalidTarget", () => {
         // 1. If Type(target) is not Object, throw a TypeError exception.
         // @ts-expect-error
