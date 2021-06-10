@@ -245,7 +245,7 @@ describe("Reflect.defineMetadata", () => {
 
 // 4.1.10 Reflect.deleteMetadata ( metadataKey, target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.deletemetadata
-describe.skip("Reflect.deleteMetadata", () => {
+describe("Reflect.deleteMetadata", () => {
     it("InvalidTarget", () => {
         expect(() => Reflect.deleteMetadata("key", undefined, undefined)).toThrow(TypeError);
     });
@@ -285,6 +285,7 @@ describe.skip("Reflect.deleteMetadata", () => {
 describe.skip("Reflect.getMetadataKeys", () => {
     it("KeysInvalidTarget", () => {
         // 1. If Type(target) is not Object, throw a TypeError exception.
+        // @ts-expect-error
         expect(() => Reflect.getMetadataKeys(undefined)).toThrow(TypeError);
     });
 
@@ -430,9 +431,10 @@ describe("Reflect.getMetadata", () => {
 
 // 4.1.9 Reflect.getOwnMetadataKeysKeys ( target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.getownmetadatakeys
-describe.skip("Reflect.deleteMetadata", () => {
+describe("Reflect.getOwnMetadataKeysKeys", () => {
     it("KeysKeysInvalidTarget", () => {
         // 1. If Type(target) is not Object, throw a TypeError exception.
+        // @ts-expect-error
         expect(() => Reflect.getOwnMetadataKeys(undefined, undefined)).toThrow(TypeError);
     });
 

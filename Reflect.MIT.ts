@@ -178,6 +178,19 @@ export function hasOwnMetadata(
   return !!ordinaryGetOwnMetadata(metadataKey, target, propertyKey);
 }
 
+export function deleteMetadata(
+  metadataKey: MetadataKey,
+  target?: Target,
+  propertyKey?: PropertyKey,
+): boolean {
+  if (target === undefined) {
+    throw new TypeError();
+  }
+  const metadataMap = getMetadataMap<unknown>(target, propertyKey);
+  if (!metadataMap) return false;
+  return metadataMap.delete(metadataKey);
+}
+
 export function hasMetadata(
   metadataKey: MetadataKey,
   target: Target,
@@ -195,11 +208,27 @@ export function defineMetadata<MetadataValue>(
   ordinaryDefineOwnMetadata(metadataKey, metadataValue, target, propertyKey);
 }
 
-function notImplemented<T extends any[]>() {
-	return (..._args: T) => {
-		throw new Error("notImplemented") 
-	}
+export function getMetadataKeys(
+  target: Target,
+  propertyKey?: PropertyKey,
+): any[] {
+	target
+	propertyKey
+	return []
 }
+
+export function getOwnMetadataKeys(
+  target: Target,
+  propertyKey?: PropertyKey,
+): any[] {
+  if (target === undefined) {
+    throw new TypeError();
+  }
+  const metadataMap = getMetadataMap<unknown>(target, propertyKey);
+  if (!metadataMap) return [];
+  return Array.from(metadataMap.keys());
+}
+
 
 export const Reflection = {
   decorate,
@@ -210,9 +239,9 @@ export const Reflection = {
   hasOwnMetadata,
   metadata,
   
-  deleteMetadata: notImplemented<any[]>(),
-  getMetadataKeys: notImplemented<any[]>(),
-  getOwnMetadataKeys: notImplemented<any[]>(),
+  deleteMetadata,
+  getMetadataKeys,
+  getOwnMetadataKeys
 };
 
 declare global {
