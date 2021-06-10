@@ -1,3 +1,4 @@
+```
 warning ../../package.json: No license field
 PASS ./Reflect.spec.ts
   Reflect.decorate
@@ -96,3 +97,4 @@ Tests:       27 skipped, 54 passed, 81 total
 Snapshots:   0 total
 Time:        1.745 s, estimated 2 s
 Ran all test suites.
+```
