@@ -265,4 +265,10 @@ declare global {
   }
 }
 
-Object.assign(Reflect, Reflection);
+
+for (const key in Reflection) {
+    if (!Reflect.has(Reflect, key)) {
+        const impl = Reflect.get(Reflection, key)
+        Reflect.set(Reflect, key, impl)
+    }
+}
